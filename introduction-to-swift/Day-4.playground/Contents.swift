@@ -68,3 +68,59 @@ while false {
 repeat {
     print("This is false")
 } while false
+
+/*
+ - Exiting loops
+*/
+var countDown = 10
+
+while countDown >= 0 {
+    print(countDown)
+    
+    if countDown == 4 {
+        print("I'm bored. Let's go now!")
+        break
+    }
+    
+    countDown -= 1
+}
+
+/*
+ -Exiting multiple loops
+*/
+outerLoop: for i in 1...10 {
+    for j in 1...10 {
+        let product = i * j
+        print ("\(i) * \(j) is \(product)")
+        
+        if product == 50 {
+            print("It's a bullseye!")
+            break outerLoop
+        }
+    }
+}
+
+/*
+ -Skipping items
+*/
+for i in 1...10 {
+    if i % 2 == 1 {
+        continue
+    }
+    
+    print(i)
+}
+
+/*
+ - Infinite loops
+*/
+var counter = 0
+
+while true {
+    print(" ")
+    counter += 1
+    
+    if counter == 273 {
+        break
+    }
+}
