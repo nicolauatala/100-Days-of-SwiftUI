@@ -13,3 +13,11 @@ MyApp will resize them all into thumbnails
 //We can now run that using printHelp() by itself:
 
 printHelp()
+
+//Accepting parameters
+func square(number: Int) {
+    print(number * number)
+}
+//That tells Swift we expect to receive an Int, and it should be called number. This name is used both inside the function when you want to refer to the parameter, but also when you run the function, like this:
+
+square(number: 8)
