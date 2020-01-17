@@ -94,3 +94,18 @@ do {
 } catch {
     print("You can't use that password.")
 }
+
+func doubleInPlace(number: inout Int) {
+    number *= 2
+}
+
+// inout parameters
+
+//All parameters passed into a Swift function are constants, so you can’t change them. If you want, you can pass in one or more parameters as inout, which means they can be changed inside your function, and those changes reflect in the original value outside the function.
+
+//For example, if you want to double a number in place – i.e., change the value directly rather than returning a new one – you might write a function like this:
+
+var myNum = 10
+doubleInPlace(number: &myNum)
+
+print(myNum)
