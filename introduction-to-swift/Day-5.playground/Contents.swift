@@ -39,4 +39,58 @@ func sayHello(to name: String) {
 
 sayHello(to: "Taylor")
 
+// Omitting parameter labels
+func greet(_ person: String) {
+    print("Hello, \(person)!")
+}
+//You can now call greet() without having to use the person parameter name:
 
+greet("Taylor")
+
+//Default parameters
+func greet(_ person: String, nicely: Bool = true) {
+    if nicely == true {
+        print("Hello, \(person)!")
+    } else {
+        print("Oh no, it's \(person) again...")
+    }
+}
+//That can be called in two ways:
+
+greet("Taylor")
+greet("Taylor", nicely: false)
+
+
+// Variadic functions
+func square(numbers: Int...) {
+    for number in numbers {
+        print("\(number) squared is \(number * number)")
+    }
+}
+//Now we can run that with lots of numbers just by passing them in separated by commas:
+
+square(numbers: 1, 2, 3, 4, 5)
+
+//Writing throwing functions
+enum PasswordError: Error {
+    case obvious
+}
+//Now we’ll write a checkPassword() function that will throw that error if something goes wrong. This means using the throws keyword before the function’s return value, then using throw PasswordError.obvious if their password is “password”.
+
+//Here’s that in Swift:
+
+func checkPassword(_ password: String) throws -> Bool {
+    if password == "password" {
+        throw PasswordError.obvious
+    }
+    
+    return true
+}
+
+// Running throwing functions
+do {
+    try checkPassword("password")
+    print("That password is good!")
+} catch {
+    print("You can't use that password.")
+}
