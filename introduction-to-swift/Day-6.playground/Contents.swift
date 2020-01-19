@@ -158,3 +158,25 @@ result("London")
 //It’s technically allowable – although really not recommended! – to call the return value from travel() directly:
 
 let result2 = travel()("London")
+
+/*
+ - Capturing values
+*/
+
+// If you use any external values inside your closure, Swift captures them – stores them alongside the closure, so they can be modified even if they don’t exist any more.
+
+func travelCV() -> (String) -> Void {
+    var counter = 1
+    
+    return {
+        print("\(counter). I'm going to \($0)")
+        counter += 1
+    }
+}
+
+let resultCV = travelCV()
+resultCV("London")
+
+resultCV("London")
+resultCV("London")
+resultCV("London")
