@@ -143,3 +143,18 @@ func travelmultipleparameters(action: (String, Int) -> String) {
 travelmultipleparameters {
     "I'm going to \($0) at \($1) miles per hour."
 }
+
+// Returning closures from functions
+
+func travel() -> (String) -> Void {
+    return {
+        print("I'm going to \($0)")
+    }
+}
+//We can now call travel() to get back that closure, then call it as a function:
+
+let result = travel()
+result("London")
+//It’s technically allowable – although really not recommended! – to call the return value from travel() directly:
+
+let result2 = travel()("London")
