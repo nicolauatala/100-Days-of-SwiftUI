@@ -91,3 +91,21 @@ struct Student {
 
 print(Student.classSize)
 
+/*
+ -Access control
+ Access control lets you restrict which code can use properties and methods. This is important because you might want to stop people reading a property directly, for example.
+ 
+ */
+
+struct Person {
+    private var id: String
+    
+    init(id: String) {
+        self.id = id
+    }
+    
+    func identify() -> String {
+        return "My social security number is \(id)"
+    }
+}
+
