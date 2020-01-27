@@ -53,7 +53,69 @@ myDog.makeNoise()
 
 /*
  - Final classes
- Although class inheritance is very useful – and in fact large parts of Apple’s platforms require you to use it – sometimes you want to disallow other developers from building their own class based on yours.
  
  Swift gives us a final keyword just for this purpose: when you declare a class as being final, no other class can inherit from it. This means they can’t override your methods in order to change your behavior – they need to use your class the way it was written.
  */
+
+final class DogTwo {
+    var name: String
+    var breed: String
+
+    init(name: String, breed: String) {
+        self.name = name
+        self.breed = breed
+    }
+}
+
+/*
+ - Copying objects
+ 
+ The third difference between classes and structs is how they are copied. When you copy a struct, both the original and the copy are different things – changing one won’t change the other. When you copy a class, both the original and the copy point to the same thing, so changing one does change the other.
+ 
+ */
+
+
+/*
+ - Deinitializers
+ 
+ The fourth difference between classes and structs is that classes can have deinitializers – code that gets run when an instance of a class is destroyed.
+
+ To demonstrate this, here’s a Person class with a name property, a simple initializer, and a printGreeting() method that prints a message:
+ */
+
+class Person {
+    var name = "John Doe"
+
+    init() {
+        print("\(name) is alive!")
+    }
+
+    deinit {
+        print("\(name) is no more!")
+    }
+    
+    func printGreeting() {
+        print("Hello, I'm \(name)")
+    }
+}
+
+for _ in 1...3 {
+    let person = Person()
+    person.printGreeting()
+}
+
+/*
+ - Mutability
+ 
+ The final difference between classes and structs is the way they deal with constants. If you have a constant struct with a variable property, that property can’t be changed because the struct itself is constant.
+
+ However, if you have a constant class with a variable property, that property can be changed. Because of this, classes don’t n
+ */
+
+class Singer {
+    var name = "Taylor Swift"
+}
+
+let taylor = Singer()
+taylor.name = "Ed Sheeran"
+print(taylor.name)
