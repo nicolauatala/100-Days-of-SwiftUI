@@ -1,9 +1,11 @@
 # My [**100 Days of SwiftUI challenge**](https://www.hackingwithswift.com/100/swiftui)
 
-### Rules
+## Rules
+
 If you want to make a success of this course, there are only two rules:
-1.  Every day you spend one hour reading or watching SwiftUI tutorials, or writing SwiftUI code.
-2.  Every day you post about your progress to the social media site of your choosing. Tell people!
+
+1. Every day you spend one hour reading or watching SwiftUI tutorials, or writing SwiftUI code.
+2. Every day you post about your progress to the social media site of your choosing. Tell people!
 
 ## Days 1-12: Introduction to Swift
 
@@ -19,3 +21,9 @@ If you want to make a success of this course, there are only two rules:
 - [Day 10](https://github.com/nicolauatala/100-Days-of-SwiftUI/blob/master/introduction-to-swift/Day-10.playground/Contents.swift) – classes and inheritance
 - [Day 11](https://github.com/nicolauatala/100-Days-of-SwiftUI/blob/master/introduction-to-swift/Day-11.playground/Contents.swift) – protocols, extensions, and protocol extensions
 - [Day 12](https://github.com/nicolauatala/100-Days-of-SwiftUI/blob/master/introduction-to-swift/Day-12.playground/Contents.swift) – optionals, unwrapping, and typecasting
+
+## Days 13-15: Consolidation I
+
+- [Day 13](https://github.com/nicolauatala/100-Days-of-SwiftUI/blob/master/introduction-to-swift/Day-13.playground/Contents.swift) – Swift review, day one
+- [Day 14](https://github.com/nicolauatala/100-Days-of-SwiftUI/blob/master/introduction-to-swift/Day-14.playground/Contents.swift) – Swift review, day two
+- [Day 15](https://github.com/nicolauatala/100-Days-of-SwiftUI/blob/master/introduction-to-swift/Day-15.playground/Contents.swift) – Swift review, day three
