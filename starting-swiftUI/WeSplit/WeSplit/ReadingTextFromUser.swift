@@ -23,6 +23,18 @@ struct ReadingTextFromUser: View {
     
     let tipPercentages = [10,15,20,25,0]
     
+    var totalPerPerson: Double {
+        let peopleCount = Double(numberOfPeople + 2)
+        let tipSelection = Double(tipPercentages[tipPercentage])
+        let orderAmount = Double(checkAmount) ?? 0
+
+        let tipValue = orderAmount / 100 * tipSelection
+        let grandTotal = orderAmount + tipValue
+        let amountPerPerson = grandTotal / peopleCount
+
+        return amountPerPerson
+    }
+    
     var body: some View {
         NavigationView {
              Form {
@@ -62,8 +74,7 @@ struct ReadingTextFromUser: View {
                  The final project won’t show checkAmount in that text view, but it’s good enough for now. Before we move on, though, I want to address one important problem: when you tap to enter text into our text field, users see a regular alphabetical keyboard. Sure, they can tap a button on the keyboard to get to the numbers screen, but it’s annoying and and not really necessary.
                  */
                  Section {
-                     Text("$\(checkAmount)")
-                        
+                     Text("$\(totalPerPerson, specifier: "%.2f")")
                  }
              }
             .navigationBarTitle("WeSplit")
