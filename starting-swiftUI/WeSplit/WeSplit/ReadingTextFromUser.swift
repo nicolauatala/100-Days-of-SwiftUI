@@ -21,33 +21,45 @@ struct ReadingTextFromUser: View {
     @State private var numberOfPeople = 2
     @State private var tipPercentage = 2
     
+    let tipPercentages = [10,15,20,25,0]
+    
     var body: some View {
-         Form {
-            
-            /*
-             One of the great things about the @State property wrapper is that it automatically watches for changes, and when something happens it will automatically re-invoke the body property. That’s a fancy way of saying it will reload your UI to reflect the changed state, and it’s a fundamental feature of the way SwiftUI works.
+        NavigationView {
+             Form {
+                
+                /*
+                 One of the great things about the @State property wrapper is that it automatically watches for changes, and when something happens it will automatically re-invoke the body property. That’s a fancy way of saying it will reload your UI to reflect the changed state, and it’s a fundamental feature of the way SwiftUI works.
 
-             To demonstrate this, add a second section with a text view showing the value of checkAmount, like this:
-             */
-             Section {
-                 TextField("Amount", text: $checkAmount)
+                 To demonstrate this, add a second section with a text view showing the value of checkAmount, like this:
+                 */
+                 Section {
+                     TextField("Amount", text: $checkAmount)
+                        .keyboardType(.decimalPad)
+                    
+                    Picker("Number of people", selection: $numberOfPeople) {
+                        ForEach(2 ..< 100) {
+                            Text("\($0) people")
+                        }
+                    }
+                 }
+
+                /*
+                 
+                 This synchronization happens because:
+
+                 Our text field has a two-way binding to the checkAmount property.
+                 The checkAmount property is marked with @State, which automatically watches for changes in the value.
+                 When an @State property changes SwiftUI will re-invoke the body property (i.e., reload our UI)
+                 Therefore the text view will get the updated value of checkAmount.
+                 The final project won’t show checkAmount in that text view, but it’s good enough for now. Before we move on, though, I want to address one important problem: when you tap to enter text into our text field, users see a regular alphabetical keyboard. Sure, they can tap a button on the keyboard to get to the numbers screen, but it’s annoying and and not really necessary.
+                 */
+                 Section {
+                     Text("$\(checkAmount)")
+                        
+                 }
              }
-
-            /*
-             
-             This synchronization happens because:
-
-             Our text field has a two-way binding to the checkAmount property.
-             The checkAmount property is marked with @State, which automatically watches for changes in the value.
-             When an @State property changes SwiftUI will re-invoke the body property (i.e., reload our UI)
-             Therefore the text view will get the updated value of checkAmount.
-             The final project won’t show checkAmount in that text view, but it’s good enough for now. Before we move on, though, I want to address one important problem: when you tap to enter text into our text field, users see a regular alphabetical keyboard. Sure, they can tap a button on the keyboard to get to the numbers screen, but it’s annoying and and not really necessary.
-             */
-             Section {
-                 Text("$\(checkAmount)")
-                    .keyboardType(.decimalPad)
-             }
-         }
+            .navigationBarTitle("WeSplit")
+        }
     }
 }
 
