@@ -16,6 +16,10 @@ struct ContentView: View {
 
 
      */
+    
+    // Instead, we create some state that tracks whether our alert is showing, like this:
+    @State private var showingAlert = false
+    
     var body: some View {
         VStack(spacing: 20) {
 //            Color.red.edgesIgnoringSafeArea(.all)
@@ -69,6 +73,25 @@ struct ContentView: View {
                     }
                 }
             }
+            
+            /*
+             - Showing alert messages
+             A basic SwiftUI alert has a title, message, and one dismiss button, like this:
+
+             Alert(title: Text("Hello SwiftUI!"), message: Text("This is some detail message"), dismissButton: .default(Text("OK")))
+
+             */
+            
+            VStack {
+                Button("Show Alert") {
+                    self.showingAlert = true
+                }
+                .alert(isPresented: $showingAlert) {
+                    Alert(title: Text("Hello SwiftUI!"), message: Text("This is some detail message"), dismissButton: .default(Text("OK")))
+                }
+            }
+            
+
         }
     }
 }
