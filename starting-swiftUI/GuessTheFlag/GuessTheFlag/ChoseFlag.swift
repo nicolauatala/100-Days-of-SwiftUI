@@ -16,12 +16,19 @@ struct ChoseFlag: View {
     
     @State private var showingScore = false
     @State private var scoreTitle = ""
+    @State private var score = 0
+    @State private var mensage = ""
     
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
             scoreTitle = "Correct"
+            score += 11
+            mensage = "Your score is \(score)"
         } else {
             scoreTitle = "Wrong"
+            score -= 9
+            score = score < 0 ? 0 : score
+            mensage = "Wrong! That’s the flag of \(self.countries[number])"
         }
 
         showingScore = true
@@ -57,10 +64,19 @@ struct ChoseFlag: View {
                             .overlay(Capsule().stroke(Color.black, lineWidth: 1))
                     }
                 }
+                
+                VStack {
+                    Text("Score")
+                        .foregroundColor(.white)
+                    Text("\(score)")
+                        .foregroundColor(.white)
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                }
             }
         }
         .alert(isPresented: $showingScore) {
-            Alert(title: Text(scoreTitle), message: Text("Your score is ???"), dismissButton: .default(Text("Continue")) {
+            Alert(title: Text(scoreTitle), message: Text("\(mensage)"), dismissButton: .default(Text("Continue")) {
                 self.askQuestion()
             })
         }
