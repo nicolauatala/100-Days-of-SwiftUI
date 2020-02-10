@@ -15,6 +15,7 @@
 		8965A90D23F1936900C3EF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8965A90B23F1936900C3EF34 /* LaunchScreen.storyboard */; };
 		8965A91523F19CE900C3EF34 /* ViewComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965A91423F19CE900C3EF34 /* ViewComposition.swift */; };
 		8965A91723F19D9800C3EF34 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965A91623F19D9800C3EF34 /* CustomModifiers.swift */; };
+		8965A91923F19F1D00C3EF34 /* CustomContainers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8965A91823F19F1D00C3EF34 /* CustomContainers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8965A90E23F1936900C3EF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8965A91423F19CE900C3EF34 /* ViewComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComposition.swift; sourceTree = "<group>"; };
 		8965A91623F19D9800C3EF34 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		8965A91823F19F1D00C3EF34 /* CustomContainers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				8965A90823F1936900C3EF34 /* Preview Content */,
 				8965A91423F19CE900C3EF34 /* ViewComposition.swift */,
 				8965A91623F19D9800C3EF34 /* CustomModifiers.swift */,
+				8965A91823F19F1D00C3EF34 /* CustomContainers.swift */,
 			);
 			path = "project-3";
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			files = (
 				8965A90123F1936600C3EF34 /* AppDelegate.swift in Sources */,
 				8965A91723F19D9800C3EF34 /* CustomModifiers.swift in Sources */,
+				8965A91923F19F1D00C3EF34 /* CustomContainers.swift in Sources */,
 				8965A90323F1936600C3EF34 /* SceneDelegate.swift in Sources */,
 				8965A90523F1936600C3EF34 /* ContentView.swift in Sources */,
 				8965A91523F19CE900C3EF34 /* ViewComposition.swift in Sources */,
