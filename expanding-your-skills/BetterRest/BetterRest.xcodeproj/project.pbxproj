@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8915C1CA23F486BD00525F30 /* BetterRestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915C1C923F486BD00525F30 /* BetterRestTests.swift */; };
 		89E9D93323F31B06001FB1DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9D93223F31B06001FB1DD /* AppDelegate.swift */; };
 		89E9D93523F31B06001FB1DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9D93423F31B06001FB1DD /* SceneDelegate.swift */; };
 		89E9D93723F31B06001FB1DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9D93623F31B06001FB1DD /* ContentView.swift */; };
@@ -15,7 +16,20 @@
 		89E9D93F23F31B08001FB1DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E9D93D23F31B08001FB1DD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8915C1CC23F486BD00525F30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89E9D92723F31B06001FB1DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89E9D92E23F31B06001FB1DD;
+			remoteInfo = BetterRest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8915C1C723F486BD00525F30 /* BetterRestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterRestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8915C1C923F486BD00525F30 /* BetterRestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestTests.swift; sourceTree = "<group>"; };
+		8915C1CB23F486BD00525F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89E9D92F23F31B06001FB1DD /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E9D93223F31B06001FB1DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E9D93423F31B06001FB1DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8915C1C423F486BD00525F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89E9D92C23F31B06001FB1DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8915C1C823F486BD00525F30 /* BetterRestTests */ = {
+			isa = PBXGroup;
+			children = (
+				8915C1C923F486BD00525F30 /* BetterRestTests.swift */,
+				8915C1CB23F486BD00525F30 /* Info.plist */,
+			);
+			path = BetterRestTests;
+			sourceTree = "<group>";
+		};
 		89E9D92623F31B06001FB1DD = {
 			isa = PBXGroup;
 			children = (
 				89E9D93123F31B06001FB1DD /* BetterRest */,
+				8915C1C823F486BD00525F30 /* BetterRestTests */,
 				89E9D93023F31B06001FB1DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				89E9D92F23F31B06001FB1DD /* BetterRest.app */,
+				8915C1C723F486BD00525F30 /* BetterRestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +110,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8915C1C623F486BD00525F30 /* BetterRestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8915C1D023F486BD00525F30 /* Build configuration list for PBXNativeTarget "BetterRestTests" */;
+			buildPhases = (
+				8915C1C323F486BD00525F30 /* Sources */,
+				8915C1C423F486BD00525F30 /* Frameworks */,
+				8915C1C523F486BD00525F30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8915C1CD23F486BD00525F30 /* PBXTargetDependency */,
+			);
+			name = BetterRestTests;
+			productName = BetterRestTests;
+			productReference = 8915C1C723F486BD00525F30 /* BetterRestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		89E9D92E23F31B06001FB1DD /* BetterRest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89E9D94323F31B08001FB1DD /* Build configuration list for PBXNativeTarget "BetterRest" */;
@@ -105,6 +155,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Nicolau Atala Pelluzi";
 				TargetAttributes = {
+					8915C1C623F486BD00525F30 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 89E9D92E23F31B06001FB1DD;
+					};
 					89E9D92E23F31B06001FB1DD = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -124,11 +178,19 @@
 			projectRoot = "";
 			targets = (
 				89E9D92E23F31B06001FB1DD /* BetterRest */,
+				8915C1C623F486BD00525F30 /* BetterRestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8915C1C523F486BD00525F30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89E9D92D23F31B06001FB1DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +204,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8915C1C323F486BD00525F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8915C1CA23F486BD00525F30 /* BetterRestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89E9D92B23F31B06001FB1DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +223,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8915C1CD23F486BD00525F30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89E9D92E23F31B06001FB1DD /* BetterRest */;
+			targetProxy = 8915C1CC23F486BD00525F30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		89E9D93D23F31B08001FB1DD /* LaunchScreen.storyboard */ = {
@@ -166,6 +244,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8915C1CE23F486BD00525F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FAP3A5C488;
+				INFOPLIST_FILE = BetterRestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolauatala.BetterRestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetterRest.app/BetterRest";
+			};
+			name = Debug;
+		};
+		8915C1CF23F486BD00525F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FAP3A5C488;
+				INFOPLIST_FILE = BetterRestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolauatala.BetterRestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetterRest.app/BetterRest";
+			};
+			name = Release;
+		};
 		89E9D94123F31B08001FB1DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -323,6 +441,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8915C1D023F486BD00525F30 /* Build configuration list for PBXNativeTarget "BetterRestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8915C1CE23F486BD00525F30 /* Debug */,
+				8915C1CF23F486BD00525F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		89E9D92A23F31B06001FB1DD /* Build configuration list for PBXProject "BetterRest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
