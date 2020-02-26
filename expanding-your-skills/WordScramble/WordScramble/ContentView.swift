@@ -9,8 +9,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    let people = ["Finn", "Leia", "Luke", "Rey"]
+    
     var body: some View {
-        Text("Hello, World!")
+        
+        /*
+         - another way to create a list
+         
+         List(0..<5) {
+             Text("Dynamic row \($0)")
+         }
+         */
+        List {
+            ForEach(people, id: \.self) {
+                Text($0)
+            }
+        }
+        .listStyle(GroupedListStyle())
     }
 }
 
