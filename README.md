@@ -27,3 +27,14 @@ If you want to make a success of this course, there are only two rules:
 - [Day 13](https://github.com/nicolauatala/100-Days-of-SwiftUI/blob/master/introduction-to-swift/Day-13.playground/Contents.swift) – Swift review, day one
 - [Day 14](https://github.com/nicolauatala/100-Days-of-SwiftUI/blob/master/introduction-to-swift/Day-14.playground/Contents.swift) – Swift review, day two
 - [Day 15](https://github.com/nicolauatala/100-Days-of-SwiftUI/blob/master/introduction-to-swift/Day-15.playground/Contents.swift) – Swift review, day three
+
+## Days 16-24: Starting SwiftUI
+
+- [Project 1](https://github.com/nicolauatala/100-Days-of-SwiftUI/tree/master/starting-swiftUI/WeSplit) - Project 1 - WeSplit
+- [Project 2](https://github.com/nicolauatala/100-Days-of-SwiftUI/tree/master/starting-swiftUI/GuessTheFlag) - Project 2 - GuessTheFlag
+- [Project 3](https://github.com/nicolauatala/100-Days-of-SwiftUI/tree/master/starting-swiftUI/project-3) - Project 3
+
+## Days 26-34: Expanding your skills
+
+- [Project 4](https://github.com/nicolauatala/100-Days-of-SwiftUI/tree/master/expanding-your-skills/BetterRest) - Project 4 - Better Rest
+- [Project 5](https://github.com/nicolauatala/100-Days-of-SwiftUI/tree/master/expanding-your-skills/WordScramble) - Project 5 - WordScramble
