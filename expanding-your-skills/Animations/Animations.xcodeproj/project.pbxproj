@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89B285FD240DE986008A7183 /* AnimatingBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B285FC240DE986008A7183 /* AnimatingBindings.swift */; };
 		89BB27ED24089E6500BD88A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB27EC24089E6500BD88A9 /* AppDelegate.swift */; };
 		89BB27EF24089E6500BD88A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB27EE24089E6500BD88A9 /* SceneDelegate.swift */; };
 		89BB27F124089E6500BD88A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB27F024089E6500BD88A9 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89B285FC240DE986008A7183 /* AnimatingBindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatingBindings.swift; sourceTree = "<group>"; };
 		89BB27E924089E6500BD88A9 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BB27EC24089E6500BD88A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89BB27EE24089E6500BD88A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				89BB27F724089E6600BD88A9 /* LaunchScreen.storyboard */,
 				89BB27FA24089E6600BD88A9 /* Info.plist */,
 				89BB27F424089E6600BD88A9 /* Preview Content */,
+				89B285FC240DE986008A7183 /* AnimatingBindings.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B285FD240DE986008A7183 /* AnimatingBindings.swift in Sources */,
 				89BB27ED24089E6500BD88A9 /* AppDelegate.swift in Sources */,
 				89BB27EF24089E6500BD88A9 /* SceneDelegate.swift in Sources */,
 				89BB27F124089E6500BD88A9 /* ContentView.swift in Sources */,
